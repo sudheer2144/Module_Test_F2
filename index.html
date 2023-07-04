@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Management</title>
+</head>
+<body onload="getData()">
+
+    <div class="container">
+        <div class="heading">
+            <h1>Student Management CRUD</h1>
+        </div>
+        <div class="input-container">
+            <div class="text-container">
+                <input type="text" placeholder="Enter Name" id="name" class="textField">
+                <input type="email" placeholder="Enter Email" id="email" class="textField">
+                <input type="text" placeholder="Enter GPA" id="gpa" class="textField">
+                <input type="text" placeholder="Enter Age" id="age" class="textField">
+                <input type="text" placeholder="Enter Degree" id="degree" class="textField">
+            </div>
+            <div class="button-container">
+                <input type="button" value="Add Student" id="button"  onclick="buttonFunction()">
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" onkeyup="searchInRow()" placeholder="Search By Name,Email Or Degree" id="search" class="textField">
+        </div>
+
+        <div class="table-container" id="table-container">
+            <table id="table">
+                <tr class="tableHead">
+                    <th>ID</th>
+                    <th>Student Name</th>
+                    <th>Email</th>
+                    <th>GPA</th>
+                    <th>Age</th>
+                    <th>Degree</th>
+                </tr>
+            </table>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
