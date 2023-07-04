@@ -1,12 +1,4 @@
-const students =
- [ 
-    { ID: 1, name: 'Alice', age: 21, gpa: 9.8, degree: 'Btech', email: 'alice@example.com' }, 
-    { ID: 2, name: 'Bob', age: 22, gpa: 8.8, degree: 'MBA', email: 'bob@example.com' }, 
-    { ID: 3, name: 'Charlie', age: 20, gpa: 9.0, degree:'Arts', email: 'charlie@example.com' },
-    { ID: 1, name: 'Alice', age: 21, gpa: 9.8, degree: 'Btech', email: 'alice@example.com' }, 
-    { ID: 2, name: 'Bob', age: 22, gpa: 8.8, degree: 'MBA', email: 'bob@example.com' }, 
-    { ID: 3, name: 'Charlie', age: 20, gpa: 9.0, degree:'Arts', email: 'charlie@example.com' } 
-];
+const students = [];
 
 //this will run onload
 function getData(){
